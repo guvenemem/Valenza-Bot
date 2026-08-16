@@ -1,3 +1,20 @@
+// --- 1. RENDER İÇİN EKLEDİĞİMİZ WEB SUNUCUSU (EN ÜSTE GELECEK) ---
+const express = require('express');
+const app = express();
+const port = process.env.PORT || 3000;
+
+app.get('/', (req, res) => {
+    res.send('Valenza Bot 7/24 Aktif!');
+});
+
+app.listen(port, '0.0.0.0', () => {
+    console.log(`Web sunucusu ${port} portunda dinlemede.`);
+});
+
+// --- 2. SENİN KENDİ ESKİ BOT KODLARIN (BUNLAR AYNEN KALACAK) ---
+// const { Client, GatewayIntentBits ... } = require('discord.js');
+// client.login(process.env.DISCORD_TOKEN);
+// ... senin diğer tüm bot kodların ...
 require('dotenv').config();
 const { 
     Client, 
