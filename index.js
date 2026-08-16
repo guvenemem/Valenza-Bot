@@ -1,3 +1,14 @@
+const express = require('express');
+const app = express();
+const PORT = process.env.PORT || 10000;
+
+app.get('/', (req, res) => {
+  res.send('Valenza Bot 7/24 Aktif!');
+});
+
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Web sunucusu ${PORT} portunda dinlemede.`);
+});
 // --- 1. RENDER İÇİN EKLEDİĞİMİZ WEB SUNUCUSU (EN ÜSTE GELECEK) ---
 const express = require('express');
 const app = express();
