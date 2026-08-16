@@ -1,7 +1,6 @@
 {
   "name": "valenza",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
